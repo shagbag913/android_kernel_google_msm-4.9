@@ -328,6 +328,8 @@ dtc-tmp = $(subst $(comma),_,$(dot-target).dts.tmp)
 
 # mkdtimg
 #----------------------------------------------------------------------------
+MKDTIMG ?= mkdtimg
+
 quiet_cmd_mkdtimg = DTBOIMG $@
 cmd_mkdtimg = $(MKDTIMG) cfg_create $@ $<
 
